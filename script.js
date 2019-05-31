@@ -1,9 +1,7 @@
-/* // Event listener to activate button
-let text_area = document.getElementById('write_space')
+let codeArea = document.getElementById('code_area')
 
-text_area.addEventListener('keyup', function(){
-    let written = document.getElementById('write_space').value
-    document.getElementById('output').srcdoc = written
-
-    //alert('Testing...')
-}) */
+codeArea.addEventListener('keyup', function(){
+    let codes = codeArea.innerText
+    let output = document.getElementById('code_output')
+    output.srcdoc = codes
+})
