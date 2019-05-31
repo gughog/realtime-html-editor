@@ -5,6 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="styles.css">
+        <!--codemirror-->
+        <link rel="stylesheet" href="lib/codemirror.css">
+        <script src="lib/codemirror.js"></script>
+        <script src="mode/htmlmixed/htmlmixed.js"></script>
+        <script src="mode/xml/xml.js"></script>
+        <script src="mode/css/css.js"></script>
+        <script src="mode/javascript/javascript.js"></script>
+        <!--codemirror-->
         <title>Real Time Editor</title>
     </head>
 
@@ -14,8 +22,8 @@
         </header>
 
         <div class="main">
-            <!-- <div class="html" contenteditable="true" id="code_area" placeholder="Your code goes here..."></div> -->
-            <textarea id="code_area" placeholder="Your code goes here..." onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"></textarea>
+            <!-- <textarea id="code_area" placeholder="Your code goes here..." onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"></textarea> -->
+            <div id="code_area"></div>
             <iframe id="code_output"></iframe>
         </div>
 
