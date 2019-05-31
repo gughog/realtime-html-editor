@@ -27,9 +27,7 @@ html{
     border-radius: 10px;
     resize: none;
 }
-#code_area:focus{
-    outline: 0;
-}
+#code_area:focus{ outline: 0; }
 #code_output{
     background: white;
     border: none;
@@ -49,14 +47,10 @@ html{
     text-decoration: none;
     color: #fff;
 }
-.footer >a:hover{
-    color: #ccc
-}
+.footer >a:hover{ color: #ccc }
 
 @media (max-width: 767.98px){
-    .main{
-        flex-flow: column;
-    }
+    .main{ flex-flow: column; }
     #code_area{
         width: 92%;
         height: 55vh;
@@ -65,7 +59,10 @@ html{
         width: 95.5%;
         height: 60vh;
     }
-    .footer{
-        padding: 10px 0;
-    }
+    .footer{ padding: 10px 0; }
+}
+@media (max-width: 575.98px){  #code_area{ width: 90.5%; }}
+@media (max-width: 374.98px){  
+    #code_area{ width: 88%; }
+    #code_output{ width: 93.5%; }
 }

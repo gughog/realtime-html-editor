@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.min.css">
         <!--codemirror-->
         <link rel="stylesheet" href="lib/codemirror.css">
         <script src="lib/codemirror.js"></script>
@@ -22,7 +22,6 @@
         </header>
 
         <div class="main">
-            <!-- <textarea id="code_area" placeholder="Your code goes here..." onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"></textarea> -->
             <div id="code_area"></div>
             <iframe id="code_output"></iframe>
         </div>
