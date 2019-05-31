@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
         <title>Real Time Editor</title>
     </head>
 
@@ -16,7 +14,8 @@
         </header>
 
         <div class="main">
-            <div class="html" contenteditable="true" id="code_area" placeholder="Your code goes here..."></div>
+            <!-- <div class="html" contenteditable="true" id="code_area" placeholder="Your code goes here..."></div> -->
+            <textarea id="code_area" placeholder="Your code goes here..." onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"></textarea>
             <iframe id="code_output"></iframe>
         </div>
 
