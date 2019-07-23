@@ -27,7 +27,7 @@ let codeEditor = CodeMirror(codeArea, {
 })
 
 let screenSize = screen.width
-console.log(screenSize)
+//console.log(screenSize)
 
 if(screenSize >= 768){
     codeEditor.setSize(null, '84vh')
