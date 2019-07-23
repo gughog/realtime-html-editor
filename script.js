@@ -8,6 +8,18 @@ codeArea.addEventListener('keyup', function(){
 
 let codeEditor = CodeMirror(codeArea, {
     /* theme: '3024-day', */
+    value:
+`<style>
+/*Your css here*/
+</style>
+
+<body>
+<!--Your HTML here-->
+</body>
+
+<script>
+//Your script here
+</script>`,
     autofocus: true,
     autoCloseBrackets: true,
     autoCloseTags: true
